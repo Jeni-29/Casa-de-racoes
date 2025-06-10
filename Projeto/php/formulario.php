@@ -42,12 +42,13 @@ $BASE = $_SERVER['SERVER_NAME'] . $_SERVER['SCRIPT_NAME'];
   <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet" />
   <title>Formulário</title>
   <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"></script>
-  <link rel="stylesheet" href="css/formulario.css">
+  <link rel="stylesheet" href="formulario.css">
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body class="p-3 m-0 border-0 bd-example">
-  <header>
+
+<!-- <header>
     <div class="navbar">
       <img src="img/logo.png" alt="Logo">
       <ul>
@@ -56,40 +57,40 @@ $BASE = $_SERVER['SERVER_NAME'] . $_SERVER['SCRIPT_NAME'];
         <li><a href="Produto.html" title="produtos">Produtos</a></li>
       </ul>
     </div>
-  </header>
+  </header>! -->
 
-  <form class="row g-3">
-    <div class="col">
+   <form class="row g-3">
+    <div class="col-md-3">
       <label class="form-label">Nome</label>
-      <input type="text" class="form-control" placeholder="Nome" aria-label="nome" />
+      <input type="text" class="form-control" placeholder="Ex: Marta..." aria-label="nome" />
     </div>
-    <div class="col">
+    <div class="col-md-3">
       <label class="form-label">Sobrenome</label>
-      <input type="text" class="form-control" placeholder="Sobrenome" aria-label="sobrenome" />
+      <input type="text" class="form-control" placeholder="Ex: Silva..." aria-label="sobrenome" />
     </div>
 
-    <div class="col-md-6">
+    <div class="col-md-3">
       <label class="form-label">Email</label>
-      <input type="email" class="form-control" />
+      <input type="email" class="form-control" placeholder ="Email:" />
     </div>
-    <div class="col-md-6">
+    <div class="col-md-3">
       <label class="form-label">Número</label>
-      <input type="text" class="form-control" />
+      <input type="text" class="form-control" placeholder ="Numero:" />
     </div>
-    <div class="col-12">
+    <div class="col-3">
       <label class="form-label">Endereço</label>
-      <input type="text" class="form-control" />
+      <input type="text" class="form-control"placeholder ="Endereço:" />
     </div>
 
-    <div class="col-md-6">
+    <div class="col-md-3">
       <label class="form-label">Cidade</label>
-      <input type="text" class="form-control" />
+      <input type="text" class="form-control"placeholder ="Cidade:" />
     </div>
 
 
-    <div class="col-md-4">
+    <div class="col-md-2">
   <label class="form-label">Estado</label>
-  <input list="estados" name="estado" class="form-control" placeholder="Digite ou selecione um estado">
+  <input list="estados" name="estado" class="form-control" placeholder="Selecione...">
 
   <datalist id="estados">
     <?php foreach ($estados as $estado): ?>
@@ -100,7 +101,7 @@ $BASE = $_SERVER['SERVER_NAME'] . $_SERVER['SCRIPT_NAME'];
 
     <div class="col-md-2">
       <label class="form-label">CEP</label>
-      <input type="text" class="form-control" />
+      <input type="text" class="form-control" placeholder="____ - ___" />
     </div>
 
     <div class="col-12">
