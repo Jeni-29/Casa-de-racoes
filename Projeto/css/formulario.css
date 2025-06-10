@@ -1,71 +1,56 @@
+/* Reset básico */
 * {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
+/* Variáveis de cor */
 :root {
     --primary: #fe991d;
     --light: #eff0f0;
     --accent: #2ba8e2;
     --dark: #182d71;
     --black: #000000;
-
-
-}
-
-body {
-    font-family: Arial, sans-serif;
-    /*background-color: #182d71;*/
-
 }
 
 
-
-header {
-    
-    box-shadow: 1px 1px 5px #2ba8e2;
-
-    img {
-        width: 90px;
-        display: flex;
-        margin-left: 80px;
-
-    }
-
-    .navbar {
-
-
-        ul {
-            display: flex;
-            flex-direction: row;
-
-            li {
-                display: flex;
-                padding: 10px;
-
-                a {
-                    text-decoration: none;
-                    color: var(--black);
-
-
-                }
-            }
-        }
-    }
-
-
-}
-/*--------formulario-----------*/
-
-
-.form-label{
-
-    display: flex;    
-    margin: 20px;
- 
-}
-label{
-    font-size: 15px;
-    justify-content: center;
+/* ===== FORMULÁRIO ===== */
+.form-label {
     display: flex;
+    margin: 10px 0 5px 0;
+    font-weight: 600;
+    font-size: 14px;
 }
+
+label {
+    font-size: 15px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+input.form-control {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Responsividade básica */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    header img {
+        margin-left: 20px;
+    }
+}
+
+
 
