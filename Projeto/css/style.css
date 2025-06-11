@@ -26,7 +26,7 @@ header {
 }
 
 .navbar img {
-    width: 90px;
+    width: 100%;
 }
 
 .navbar ul {
@@ -41,15 +41,20 @@ header {
     padding: 10px 15px;
 }
 
-.navbar a {
+.nav-link{
+
+    font-size: 15px;
+}
+
+.nav-link a {
     text-decoration: none;
     color: var(--black);
     transition: all 0.3s ease;
 }
 
-.navbar a:hover {
-    border-bottom: 2px solid var(--primary);
-    font-size: 110%;
+.navbar-nav a:hover {
+    border-bottom: 1px solid var(--primary);
+    font-size: 105%;
 }
 
 /* =================== SECTIONS =================== */
