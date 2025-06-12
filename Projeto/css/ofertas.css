@@ -1,6 +1,14 @@
+
+
+
+
 body {
-    /*background-image: url(../img/fundo.jpg);*/
+   
+     background-image: url(../img/fundo.jpg);
 }
+
+
+
 .container {
     padding: 20px 40px;
     max-width: 1200px;
@@ -47,10 +55,3 @@ body {
     font-weight: bold;
 }
 
-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 15px 0;
-    margin-top: 40px;
-}

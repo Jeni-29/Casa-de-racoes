@@ -41,7 +41,6 @@ $estados = [
   <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"></script>
 
   <link rel="stylesheet" href="formulario.css">
-  <link rel="stylesheet" href="style.css">
 </head>
 
 <body class="p-3">

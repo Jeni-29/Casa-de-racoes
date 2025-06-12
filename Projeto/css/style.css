@@ -11,6 +11,7 @@
     --accent: #2ba8e2;
     --dark: #182d71;
     --black: #000000;
+    --cinz:#ccc
 }
 
 body {
@@ -21,8 +22,10 @@ body {
 /* =================== HEADER =================== */
 
 header {
-    box-shadow: 1px 1px 5px var(--accent);
-    background-color: var(--light);
+    box-shadow: 1px 1px 5px var(--cinz);
+    background-color: var(--dark);
+    
+   
 }
 
 .navbar img {
@@ -42,94 +45,34 @@ header {
 }
 
 .nav-link{
-
+    color: #ffffff;
     font-size: 15px;
 }
 
-.nav-link a {
-    text-decoration: none;
-    color: var(--black);
-    transition: all 0.3s ease;
-}
 
 .navbar-nav a:hover {
+    color: var(--primary);
     border-bottom: 1px solid var(--primary);
     font-size: 105%;
 }
 
-/* =================== SECTIONS =================== */
 
-section {
-    padding: 40px 20px;
-}
-
-section img {
-    width: 100%;
-    height: auto;
-    display: block;
-    margin-top: 20px;
-}
-
-/* =================== TEXTO =================== */
-
-h1, h2, p {
-    padding-left: 20px;
-}
-
-p {
-    font-weight: 500;
-    font-style: oblique;
-}
 
 /* =================== FOOTER =================== */
 
 footer {
     color: black;
     margin-top: 35px;
-    padding: 40px 20px;
-    background-image: url('img/fundo.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    padding: 10px 5%;
+    background-color: var(--dark);
 }
 
-.gri {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 50px;
-    justify-content: space-between;
-    align-items: flex-start;
-    margin: 0 auto;
-    max-width: 1200px;
-}
-
-.gri ul {
-    list-style: none;
-    padding: 0;
-}
-
-.gri li {
-    padding: 6px 0;
-}
-
-.gri a {
-    text-decoration: none;
-    color: var(--black);
-    transition: 0.3s ease;
-}
-
-.gri a:hover {
+a:hover{
     color: var(--primary);
-    font-weight: bold;
+    border-bottom: 1px solid var(--primary);
+    font-size: 105%;
 }
-
-.menu-container,
-.localizacao-container {
-    padding-top: 20px;
-    max-width: 250px;
-}
-
-.localizacao-container p {
+p {
     padding-left: 0;
 }
 

@@ -1,18 +1,4 @@
-/* Reset básico */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
-/* Variáveis de cor */
-:root {
-    --primary: #fe991d;
-    --light: #eff0f0;
-    --accent: #2ba8e2;
-    --dark: #182d71;
-    --black: #000000;
-}
 
 
 /* ===== FORMULÁRIO ===== */
