@@ -1,0 +1,23 @@
+/* =================== SECTIONS =================== */
+
+section {
+    padding: 40px 20px;
+}
+
+section img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-top: 20px;
+}
+
+/* =================== TEXTO =================== */
+
+h1, h2, p {
+    padding-left: 20px;
+}
+
+p {
+    font-weight: 500;
+    font-style: oblique;
+}
