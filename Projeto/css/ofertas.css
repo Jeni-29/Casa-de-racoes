@@ -1,7 +1,4 @@
 
-
-
-
 body {
    
      background-image: url(../img/fundo.jpg);
@@ -23,7 +20,7 @@ body {
 }
 
 .card {
-    background: white;
+    background: #ebe9e9;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     overflow: hidden;

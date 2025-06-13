@@ -1,4 +1,4 @@
-const filtroItems = document.querySelectorAll(".sidebar ul li");
+const filtroItems = document.querySelectorAll(".sidebar ul li dropdown-menu");
 const produtos = document.querySelectorAll(".produto-card");
 
 filtroItems.forEach(item => {
