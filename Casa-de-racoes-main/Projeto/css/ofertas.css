@@ -1,3 +1,21 @@
+/* ============paleta de cores===========*/
+:root {
+    --cor-primaria: #00AEEF;
+    --cor-secundaria: #F7941D;
+    --cor-fundo: #FFF6E9;
+    --cor-cinza-suave: #E5E5E5;
+    --cor-preto-suave: #333333;
+    --cor-destaque: #FFA940;
+    --cor-azul-escuro: #000285;
+    --primary: #ff8c00;
+    --light: #eff0f0;
+    --accent: #2b89e2;
+    --dark: #000e3d;
+    --black: #000000;
+    --cinz: #ccc
+}
+
+
 
 body {
    

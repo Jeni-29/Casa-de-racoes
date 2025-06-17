@@ -1,19 +1,18 @@
 :root {
-  /* Cores principais */
-  --cor-primaria: #00AEEF;        /* Azul Claro */
-  --cor-secundaria: #F7941D;      /* Laranja Vibrante */
-
-  /* Cores de fundo e neutras */
-  --cor-fundo: #FFF6E9;           /* Bege Pastel */
-  --cor-branco: #FFFFFF;          /* Branco puro */
-  --cor-cinza-suave: #E5E5E5;     /* Cinza claro */
-  --cor-preto-suave: #333333;     /* Preto suave */
-
-  /* Cores auxiliares */
-  --cor-destaque: #FFA940;        /* Laranja mais claro para hover */
-  --cor-azul-escuro: #0077A5;     /* Azul mais forte para títulos/contraste */
+    --cor-primaria: #00AEEF;
+    --cor-secundaria: #F7941D;
+    --cor-fundo: #FFF6E9;
+    --cor-cinza-suave: #E5E5E5;
+    --cor-preto-suave: #333333;
+    --cor-destaque: #FFA940;
+    --cor-azul-escuro: #000285;
+    --primary: #ff8c00;
+    --light: #eff0f0;
+    --accent: #2b89e2;
+    --dark: #000e3d;
+    --black: #000000;
+    --cinz: #ccc
 }
-
 
 
 /* =================== SECTIONS =================== */
@@ -49,7 +48,14 @@
   background: url('../img/Plano\ de\ fundo.jpg') no-repeat center center/cover;
   height: 400px;
 }
-
+.hero-content .btn{
+    background-color: #fd8b00;
+  color: white;
+}
+.hero-content .btn:hover{
+  background-color: #0077A5;
+  color: white;
+}
 /*=======================================*/
 
 /*==================texto=====================*/
@@ -120,15 +126,8 @@
   color: #f7941d;
 }
 
-/* =================== TEXTO =================== */
-
-h1,
-h2,
-p {
-    padding-left: 20px;
-}
-
-p {
-    font-weight: 500;
-    font-style: oblique;
+@media (min-width: 992px){
+  .categoria-card{
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
 }
