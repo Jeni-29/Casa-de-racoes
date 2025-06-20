@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+:root {
+  --cor-primaria: #00AEEF;
+  --cor-secundaria: #F7941D;
+  --cor-fundo: #FFF6E9;
+  --cor-cinza-suave: #E5E5E5;
+  --cor-preto-suave: #333333;
+  --cor-destaque: #FFA940;
+  --cor-azul-escuro: #000285;
+  --primary: #ff8c00;
+  --light: #eff0f0;
+  --accent: #2b89e2;
+  --dark: #000e3d;
+  --black: #000000;
+  --cinz: #ccc
+}
+
+/*========titulo========*/
+
+body {
+       background-image: url(../img/plano\ de\ fundo\ contato.avif);
+       overflow-x: hidden;
+    }
+    .form-container {
+      max-width: 700px;
+      margin: 50px auto;
+      background: var(--cor-cinza-suave);
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.1);
+       p{
+        color: #000000;
+    }
+    }
+    .form-title {
+      color: var(--accent);
+     font-family: 'Fredoka', sans-serif;
+        font-weight: 650;
+    }
+   
+    label{
+        font-family: 'Nunito', sans-serif;
+    }
+    .btn{
+        background:#0056b3;
+        color: #000000;
+    }
+
+    .btn:hover{
+        background: linear-gradient(135deg, #0056b3, #007bff);
+        color: #000000;
+    }
+
+    .btn-home{
+        margin: 100px;
+    }
