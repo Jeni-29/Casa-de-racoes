@@ -137,7 +137,26 @@ font-family: 'Chewy', cursive;
   background-color: #fff;
   color: #f7941d;
 }
+/*=======botão============*/
+#btnTopo {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+  background-color: #00AEEF;
+  color: white;
+  border: none;
+  padding: 12px 16px;
+  border-radius: 50%;
+  font-size: 24px;
+  cursor: pointer;
+  display: none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
 
+#btnTopo:hover {
+  background-color: #0077b6;
+}
 @media (min-width: 720px) {
   .categoria-card {
     transition: transform 0.3s ease, box-shadow 0.3s ease;

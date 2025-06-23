@@ -43,3 +43,33 @@
     }
 });
 
+
+  const btn = document.getElementById("btnTopo");
+
+  window.onscroll = function () {
+    if (document.documentElement.scrollTop > 800) {
+      btn.style.display = "block";
+    } else {
+      btn.style.display = "none";
+    }
+  };
+
+  btn.addEventListener("click", function () {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  });
+
+// Remove target="_blank" no mobile
+document.addEventListener("DOMContentLoaded", function () {
+  if (window.innerWidth <= 767) {
+    const links = document.querySelectorAll('a[target="_blank"]');
+
+    links.forEach(link => {
+      link.removeAttribute("target");
+    });
+  }
+});
+
+ 

@@ -19,11 +19,31 @@
 
 body {
    
-    background-color: #ffdaad;
+    background-color: #f5dfc4;
 }
 
+.titulo{
+     font-weight: 700;
+ font-family: 'Chewy', cursive;
+  color: #f7941d;
+  font-size: 50px;
+  margin-bottom: 1rem;
+}
+.linha-container{
+  border: 3px solid #fd981b;
+}
 
-
+a{
+      font-family: 'Baloo 2', cursive;
+      font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+    color: var(--accent);
+    font-size: 20px;
+}
+a:hover{
+    color: var(--cor-destaque);
+}
 .container {
     padding: 20px 40px;
     max-width: 1200px;
@@ -74,3 +94,25 @@ body {
     font-weight: bold;
 }
 
+/* Oculta em geral */
+
+
+
+
+@media (max-width: 767px) {
+ #btnTopo {
+ position: fixed;
+
+    bottom: 5px;
+    right: 20px;
+    z-index: 99;
+    background-color: #00AEEF;
+    color: white;
+    border: none;
+    padding: 10px 12px;
+    border-radius: 50%;
+    font-size: 24px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+}
