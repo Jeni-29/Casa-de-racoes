@@ -10,6 +10,20 @@
 
 
 /*==========apresentação============*/
+.apresentacao .container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+.container {
+ width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 15px;
+}
+
+
+
+
 .apresentacao  {
   margin: 35px;
   padding: 10px;
@@ -62,7 +76,7 @@ font-family: 'Chewy', cursive;
   padding: 25px;
   text-align: center;
   width: 220px;
-  
+ 
 
  
 
@@ -101,7 +115,8 @@ font-family: 'Chewy', cursive;
 /* Card do produto */
 .produto-card {
   background-color: #fff;
-
+  width: 100%;
+  max-width: 200px;
   border: none;
   border-radius: 15px;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
@@ -149,36 +164,19 @@ font-family: 'Chewy', cursive;
 
 
 
+/*======Responsivel======*/
 
 
-
-/* Responsivo para desktop */
-@media (min-width: 992px) {
-  .container {
-    align-items: flex-start;
+@media (max-width: 767px) {
+  .grupo .d-flex {
+    display: grid !important;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    justify-items: center;
   }
 
-  .sidebar {
-    text-align: left;
-    
+  .produto-card {
+    width: 100%;
+    max-width: 180px;
+    margin: 0 auto;
   }
-
-  section .d-flex {
-    justify-content: flex-start;
-  }
-
-.produto-card{
-  flex-direction: column;
-    align-items: center;  
-}
-
- .grupo{
-  margin: auto;
- }
-  .titulo-secao {
-    text-align: left;
-    margin-left: 10px;
-  }
-
- 
 }

@@ -1,4 +1,5 @@
-document.addEventListener("DOMContentLoaded", function () {
+  //===================Mostra cada categoria ======================  
+    document.addEventListener("DOMContentLoaded", function () {
     const botoesFiltro = document.querySelectorAll(".filtro-btn");
     const grupos = document.querySelectorAll(".grupo");
 
@@ -15,6 +16,8 @@ document.addEventListener("DOMContentLoaded", function () {
             filtrarGrupos(filtro);
         });
     });
+
+// ================= parte para puxar as seção na pagina home================
 
     function filtrarGrupos(filtro) {
         grupos.forEach(grupo => {
@@ -39,3 +42,4 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 });
+

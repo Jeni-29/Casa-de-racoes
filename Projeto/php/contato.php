@@ -1,38 +1,42 @@
 <?php
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
+
+require 'PHPMailer/src/Exception.php';
+require 'PHPMailer/src/PHPMailer.php';
+require 'PHPMailer/src/SMTP.php';
+
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // Captura os dados do formulário
     $nome = htmlspecialchars($_POST['nome']);
     $email = filter_var($_POST['email'], FILTER_SANITIZE_EMAIL);
-    $telefone = htmlspecialchars($_POST['telefone']);
     $assunto = htmlspecialchars($_POST['assunto']);
     $mensagem = htmlspecialchars($_POST['mensagem']);
 
-    // (e-mail da loja)
-    $para = "contato@sualoja.com.br"; // 
+    $mail = new PHPMailer(true);
+    try {
+        // Configurações do servidor
+        $mail->isSMTP();
+        $mail->Host = 'smtp.gmail.com';
+        $mail->SMTPAuth = true;
+        $mail->Username = 'jenifferssilva2005@gmail.com'; 
+        $mail->Password = 'xgnm xbjn plva tmmv'; 
+        $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
+        $mail->Port = 587;
 
-    // Assunto do e-mail
-    $titulo = "Formulário de Contato - $assunto";
+        // Remetente e destinatário
+        $mail->setFrom($email, $nome);
+        $mail->addAddress('jenifferssilva2005@gmail.com');
 
-    // Monta o corpo da mensagem
-    $corpo = "Nome: $nome\n";
-    $corpo .= "E-mail: $email\n";
-    $corpo .= "Telefone: $telefone\n";
-    $corpo .= "Assunto: $assunto\n";
-    $corpo .= "Mensagem:\n$mensagem";
+        // Conteúdo do e-mail
+        $mail->isHTML(true);
+        $mail->Subject = "Contato do site - $assunto";
+        $mail->Body    = "<strong>Nome:</strong> $nome<br><strong>Email:</strong> $email<br><strong>Mensagem:</strong><br>$mensagem";
 
-    // Cabeçalhos do e-mail
-    $headers = "From: $email" . "\r\n" .
-               "Reply-To: $email" . "\r\n" .
-               "X-Mailer: PHP/" . phpversion();
-
-    // Envia o e-mail
-    if (mail($para, $titulo, $corpo, $headers)) {
-        echo "<h2>Mensagem enviada com sucesso!</h2>";
-    } else {
-        echo "<h2>Erro ao enviar. Tente novamente mais tarde.</h2>";
+        $mail->send();
+        echo "Mensagem enviada com sucesso!";
+    } catch (Exception $e) {
+        echo "Erro ao enviar: {$mail->ErrorInfo}";
     }
-} else {
-    echo "Método inválido.";
 }
 ?>
 <!DOCTYPE html>
@@ -44,8 +48,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
   <link rel="stylesheet" href="formulario.css">
+  
 </head>
 <body>
+
+
 
   <div class="container">
     <div class="form-container">

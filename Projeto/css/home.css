@@ -13,7 +13,9 @@
   --black: #000000;
   --cinz: #ccc
 }
-
+body {
+  overflow-x: hidden;
+}
 
 /* =================== SECTIONS =================== */
 .hero-banner::before {
@@ -21,8 +23,8 @@
   position: absolute;
   inset: 0;
   background: rgba(0, 0, 0, 0.3);
-  /* escurece só um pouco */
   z-index: 1;
+  
 
 }
 
@@ -136,8 +138,9 @@ font-family: 'Chewy', cursive;
   color: #f7941d;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 720px) {
   .categoria-card {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
+  
 }

@@ -25,13 +25,13 @@
 /*========titulo========*/
 
 body {
-       background-image: url(../img/plano\ de\ fundo\ contato.avif);
+       background-image: url(../img/Plano\ de\ fundo.jpg);
        overflow-x: hidden;
     }
     .form-container {
       max-width: 700px;
       margin: 50px auto;
-      background: var(--cor-cinza-suave);
+      background: var(--cor-fundo);
       padding: 30px;
       border-radius: 12px;
       box-shadow: 0 0 20px rgba(0,0,0,0.1);
