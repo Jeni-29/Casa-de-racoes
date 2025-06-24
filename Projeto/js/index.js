@@ -47,7 +47,7 @@
   const btn = document.getElementById("btnTopo");
 
   window.onscroll = function () {
-    if (document.documentElement.scrollTop > 800) {
+    if (document.documentElement.scrollTop >100) {
       btn.style.display = "block";
     } else {
       btn.style.display = "none";

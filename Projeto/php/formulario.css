@@ -16,7 +16,7 @@ body {
 .form-container {
     max-width: 700px;
     margin: 50px auto;
-    background: #ffe6d8;
+    background: #ebd8cd;
     padding: 30px;
     border-radius: 12px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
@@ -27,7 +27,7 @@ body {
 }
 
 .form-title {
-    color: #0056b3;
+    color: #3e89da;
     font-family: 'Fredoka', sans-serif;
     font-weight: 650;
 }
@@ -40,7 +40,7 @@ label {
 }
 
 .btn {
-    background: #0056b3;
+    background: #3b9aff;
     color: #000000;
 }
 

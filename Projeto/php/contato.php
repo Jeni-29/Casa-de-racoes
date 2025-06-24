@@ -18,14 +18,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $mail->isSMTP();
         $mail->Host = 'smtp.gmail.com';
         $mail->SMTPAuth = true;
-        $mail->Username = 'jenifferssilva2005@gmail.com'; 
-        $mail->Password = 'xgnm xbjn plva tmmv'; 
+        $mail->Username = 'casaderacoesv24@gmail.com'; 
+        $mail->Password = 'jtdt vare sreg iyhb'; 
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
         $mail->Port = 587;
 
         // Remetente e destinatário
         $mail->setFrom($email, $nome);
-        $mail->addAddress('jenifferssilva2005@gmail.com');
+        $mail->addAddress('casaderacoesv24@gmail.com');
 
         // Conteúdo do e-mail
         $mail->isHTML(true);
@@ -33,12 +33,53 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $mail->Body    = "<strong>Nome:</strong> $nome<br><strong>Email:</strong> $email<br><strong>Mensagem:</strong><br>$mensagem";
 
         $mail->send();
-        echo "Mensagem enviada com sucesso!";
+
+        echo "<div style=\"
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: 'Fredoka', sans-serif;
+            font-weight: 650;
+            font-size: 16px;
+            color: blue;
+            text-align: center;
+            flex-direction: column;
+        \">
+            <p style='margin-bottom: 20px;'>Mensagem enviada com sucesso!</p>
+            <a href='../index.html'>
+                <button style=\"
+                    padding: 10px 20px;
+                    font-size: 14px;
+                    border: none;
+                    border-radius: 5px;
+                    background-color: #4CAF50;
+                    color: white;
+                    cursor: pointer;
+                \">
+                    Voltar ao Home
+                </button>
+            </a>
+        </div>";
+
     } catch (Exception $e) {
-        echo "Erro ao enviar: {$mail->ErrorInfo}";
+        echo "<div style=\"
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+            font-size: 1.5rem;
+            color: red;
+            text-align: center;
+            padding: 20px;
+        \">
+            <p>Erro ao enviar: {$mail->ErrorInfo}</p>
+        </div>";
     }
 }
 ?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -59,9 +100,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 </head>
 <body>
-  <a href="../index.html">
-  <button id="btnTopo" title="Voltar ao topo">Voltar ao home</button>
-  </a>
+ 
   <div class="container">
     <div class="form-container">
       <h2 class="text-center form-title mb-4"><i class="bi bi-chat-dots"></i> Fale Conosco</h2>
